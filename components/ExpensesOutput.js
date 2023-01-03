@@ -31,7 +31,7 @@ const DUMMY_EXPENSES = [
     {
         id: 'e5',
         description: 'TV',
-        amount: 2333.99,
+        amount: 233.99,
         date: new Date('2022-08-07')
     }
 ]
@@ -50,7 +50,9 @@ export default ExpensesOutput;
 const sytles = StyleSheet.create({
    container: {
        flex: 1,
-       padding: 24,
+       paddingHorizontal: 24,
+       paddingTop: 24,
+       paddingBottom: 0,
        backgroundColor: GlobalStyles.colors.primary700
    }
 });
