@@ -6,13 +6,13 @@ import {GlobalStyles} from "../constants/styles";
 const DUMMY_EXPENSES = [
     {
         id: 'e1',
-        description: 'A pair of shoes',
+        description: 'Scarpe',
         amount: 59.99,
         date: new Date('2022-12-19')
     },
     {
         id: 'e2',
-        description: 'A pair of jeans',
+        description: 'Giubbino onfire',
         amount: 88.43,
         date: new Date('2022-11-13')
     },
