@@ -1,9 +1,10 @@
-import { StyleSheet, View} from "react-native";
+import {StyleSheet, TextInput, View} from "react-native";
 import {useContext, useLayoutEffect} from "react";
 import IconButton from "../UI/IconButton";
 import {GlobalStyles} from "../constants/styles";
 import Button from "../UI/Button";
 import {ExpensesContext} from "../store/expenses-context";
+import ExpenseForm from "../components/ManageExpense/ExpenseForm";
 
 function ManageExpense({route, navigation}){
     const expensesCtx = useContext(ExpensesContext);
@@ -49,6 +50,7 @@ function ManageExpense({route, navigation}){
 
     return (
        <View style={styles.container}>
+           <ExpenseForm />
            <View style={styles.buttons}>
                <Button style={styles.button} mode="flat" onPress={cancelHandler}> Cancel </Button>
                <Button style={styles.button} onPress={confirmHandler}>{isEditing ? 'Update' : 'Add'}</Button>

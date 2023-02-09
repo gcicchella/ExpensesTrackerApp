@@ -4,4 +4,7 @@
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/node_modules/react-native-gradle-plugin" />
   </component>
+  <component name="ProjectType">
+    <option name="id" value="jpab" />
+  </component>
 </project>
